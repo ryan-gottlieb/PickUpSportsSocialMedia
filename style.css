@@ -3,9 +3,16 @@
 
 /* Create roots for all colors */
 :root {
-    --color_light: hsl();
-    --color_medium: hsl();
-    --color_dark: hsl();
+    --color_light: hsl(252, 30%, 100%);
+    --color_medium: hsl(252, 15%, 65%);
+    --color_dark: hsl(252, 30%, 17%);
+    --color_black: hsl(252, 30%, 10%);
+    --color_white: hsl(252, 30%, 100%);
+    --color_primary:;
+    --color_secondary:;
+    --color_tertiary:;
+    --color_confirmed: hsl(120, 95%, 65%);
+    --color_denied: hsl(0, 95%, 65%);
 }
 
 
