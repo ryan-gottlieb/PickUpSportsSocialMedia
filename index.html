@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 </head>
 <body>
+    <!----------------Navigation Bar & Search Bar------------------------->
     <nav>
         <div class="container">
             <h2 class="logo">
@@ -20,12 +21,86 @@
                 <input type="search" placeholder="Search for Players, Locations, and Sports">
             </div>
             <div class="create">
-                <label for="create_post">Post</label>
+                <label class="btn btn_primary" for="create_post">Post</label>
             </div>
             <div class="profile_pic">
                 <img src="./images/ProfilePicture_Default.jpg">
             </div>
         </div>
     </nav>
+
+
+    <!---------------------MAIN SECTION------------------------------->
+    <main>
+        <div class="container">
+            <!------------LEFT SECTION   (MENU and Functions List)---------->
+            <div class="left_section">
+                <!-------Profile Picture, Name, and Handle------->
+                <a class="profile">
+                    <div class="profile_pic">
+                            <img src="./images/ProfilePicture_Default.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Name_of_User</h4>
+                        <div class="text_muted">
+                            @UsernameHandle
+                        </div>
+                    </div>
+                </a>
+
+                <!--------------------Side_Bar------------------------>
+                <div class="side_bar">
+                    <a class="menu_item" active>
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-map-marker"></i></span>
+                        <h3>Locations</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-basketball"></i></span>
+                        <h3>Favorite Sports</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span></span><i class="uil uil-envelope-alt"></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-bell"></i></span>
+                        <h3>Notifications</h3>
+                        <!-------Notification Popup------->
+                        <div class="notification_popup">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic1">
+                            </div>
+                            <div class="notification_text">
+                                <b>Friend1Name</b> notification message - add multiple classes for each type of notification.
+                                <small class="text_muted">TimeSinceNotification</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-calender"></i></span>
+                        <h3>Upcoming Events</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-cog"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-------------CENTER SECTION   (POSTS and NOTIFCATIONS ABOUT LOCATIONS)--->
+            <div class="center_section">
+
+            </div>
+
+            <!-----------RIGHT SECTION     (INTERACTIONS with FRIENDS and UPCOMING EVENTS)-->
+            <div class="right_section">
+
+            </div>
+        </div>
+    </main>
 </body>
 </html>

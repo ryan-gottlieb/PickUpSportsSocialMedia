@@ -3,8 +3,8 @@
 
 /* Create roots */
 :root {
-    /* Roots for Colors */
-    --color_light: hsl(252, 30%, 100%);
+    /*-----------Roots for Colors-------------*/
+    --color_light: hsl(252, 30%, 95%);
     --color_medium: hsl(252, 15%, 65%);
     --color_dark: hsl(252, 30%, 18%);
     --color_black: hsl(252, 30%, 10%);
@@ -15,21 +15,31 @@
     --color_confirmed: hsl(125, 85%, 50%);
     --color_denied: hsl(0, 95%, 65%);
 
-    /* Border & Padding Roots */
+    /*--------------Border & Padding Roots-----------------*/
     --border_radius: 2rem;
     --card_border_radius: 1rem;
     --search_padding: 0.6rem 1rem;
     --btn_padding: 0.6rem 2rem;
     --card_padding: 1rem;
 
-    /* Font Sizes */
+    /*----------------Font Sizes-------------*/
     --font_size_btn: 0.9rem;
     --font_weight_btn: 500;
+
+    /*----------------Notification Messages-----------*/
+    --accepted_fr: ;
+    --liked_post: ;
+    --commented_on_post: ;
+    --sent_fr: ;
+    --added_to_group: ;
+    --invite_to_event: ;
+    --upcoming_event: ;
+
 }
 
 
 
-/* Zero out, Reset all parameters */
+/*-------------------Zero out, Reset all parameters---------------------*/
 *,*::before,
 *::after{
     margin: 0;
@@ -48,14 +58,14 @@ body{
     overflow-x: hidden;
 }
 
-/* Overall Style   */
+/*-------------------Overall Class Styles-------------------------*/
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-.profile_picture {
-    width: 2.7rem;
+.profile_pic {
+    width: 7rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -75,3 +85,62 @@ body{
     transition: all 300ms ease;
     font-size: var(--font_size_btn);
 }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn_primary {
+    background: var(--color_primary);
+    color: var(--color_white);
+}
+
+.text_bold {
+    font-weight: 500;
+}
+
+.text_muted {
+    color: var(--color_medium);
+}
+
+/*------------------Navigation Bar------------------*/
+nav {
+    width: 100%;
+    background: var(--color_white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .search_bar {
+    background: var(--color_light);
+    border-radius: var(--border_radius);
+    padding: var(--search_padding);
+}
+
+nav .search_bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color_dark);
+}
+
+nav .search_bar input[type="search"]::placeholder{
+    color: var(--color_medium);
+}
+
+nav .create {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*----------------Notification Classes-------------------*/
