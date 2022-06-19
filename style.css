@@ -27,13 +27,13 @@
     --font_weight_btn: 500;
 
     /*----------------Notification Messages-----------*/
-    --accepted_fr: ;
-    --liked_post: ;
-    --commented_on_post: ;
-    --sent_fr: ;
-    --added_to_group: ;
-    --invite_to_event: ;
-    --upcoming_event: ;
+    --accepted_fr: "has accepted your friend request.";
+    --liked_post: "has liked your post.";
+    --commented_on_post: "has commented on your post.";
+    --sent_fr: "has sent you a friend request.";
+    --added_to_group: "has added you to a group.";
+    --invite_to_event: "has invited you to join an event.";
+    --upcoming_event: "has an upcoming event tomorrow.";
 
 }
 
@@ -66,6 +66,7 @@ body{
 
 .profile_pic {
     width: 7rem;
+    height: 7rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -74,6 +75,24 @@ body{
 .img {
     display: block;
     width: 100%;
+}
+
+img.large {
+    display: block;
+    width: 30rem;
+    height: 30rem;
+}
+
+img.medium {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+}
+
+img.small {
+    display: block;
+    width: 8rem;
+    height: 8rem;
 }
 
 .btn {
@@ -144,3 +163,11 @@ nav .create {
 }
 
 /*----------------Notification Classes-------------------*/
+
+
+
+/*----------------Left Section Styling ---------------------*/
+
+/*----------------Center Section Styling ---------------------*/
+
+/*----------------Right Section Styling ---------------------*/
