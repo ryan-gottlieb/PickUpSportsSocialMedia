@@ -321,5 +321,70 @@ main .container .left_section .profile {
     border-radius: var(--border_radius);
 }
 
+.center_section .create_post input[type='text'] {
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color_dark);
+    margin-right: 1rem;
+}
+
+/*--------------------Center Section Event Feed-------------*/
+
+.center_section .event_feed .post {
+    background: var(--color_white);
+    border-radius: var(--card_border_radius);
+    padding: var(--card_padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.center_section .post .post_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center_section .post .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.center_section .post .post_photo {
+    border-radius: var(--card_border_radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.center_section .post .action_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+.center_section .liked_by {
+    display: flex;
+}
+
+.center_section .liked_by span {
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color_white);
+    margin-left: -0.6rem;
+}
+
+.center_section .liked_by span:first-child {
+    margin: 0;
+}
+
+.center_section .liked_by p {
+    margin-left: 0.5rem;
+}
 
 /*----------------Right Section Styling ---------------------*/
