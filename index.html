@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <!-------Link for IconScout Browsing https://iconscout.com/unicons/explore/line ----->
+    <!----JS External Script Link---->
+    <script src="index.js"></script>
 </head>
 <body>
     <!----------------Navigation Bar & Search Bar------------------------->
@@ -55,19 +57,19 @@
                         <span><i class="uil uil-home"></i></span>
                         <h3>Home</h3>
                     </a>
-                    <a class="menu_item">
+                    <a href="javascript:changeWindow('locations');" class="menu_item">
                         <span><i class="uil uil-map-marker"></i></span>
                         <h3>Locations</h3>
                     </a>
-                    <div class="menu_item">
+                    <a href="javascript:changeWindow('watch');" class="menu_item">
                         <span><i class="uil uil-tv-retro"></i></span>
                         <h3>Watch</h3>
-                    </div>
-                    <a class="menu_item">
+                    </a>
+                    <a href="javascript:changeWindow('favoritesports');" class="menu_item">
                         <span><i class="uil uil-basketball"></i></span>
                         <h3>Favorite Sports</h3>
                     </a>
-                    <a class="menu_item" id="messages_notifications">
+                    <a href="javascript:changeWindow('messages');" class="menu_item" id="messages_notifications">
                         <span></span><i class="uil uil-envelope-alt"><small class="notification_count">5</small></i></span>
                         <h3>Messages</h3>
                     </a>
@@ -85,13 +87,17 @@
                             </div>
                         </div>
                     </a>
-                    <a class="menu_item">
+                    <a href="javascript:changeWindow('upcoming');" class="menu_item">
                         <span><i class="uil uil-calender"></i></span>
                         <h3>Upcoming Events</h3>
                     </a>
-                    <a class="menu_item">
+                    <a href="javascript:changeWindow('settings');" class="menu_item">
                         <span><i class="uil uil-cog"></i></span>
                         <h3>Settings</h3>
+                    </a>
+                    <a href="javascript:changeWindow('signin');" class="menu_item">
+                        <span><i class="uil uil-cog"></i></span>
+                        <h3>Sign In</h3>
                     </a>
                 </div>
                 <!---------------------END of Side_bar------------------------->

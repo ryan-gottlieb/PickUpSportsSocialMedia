@@ -520,3 +520,6 @@ main .container .right_section {
     gap: 1rem;
 }
 
+a {
+    color:black;
+}
