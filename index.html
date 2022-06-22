@@ -254,38 +254,118 @@
                         </div>
                     </div>
                </div>
+               <!--------------------End of Event Feed----------------->
             </div>
 
             <!-----------RIGHT SECTION     (INTERACTIONS with FRIENDS and UPCOMING EVENTS)-->
             <div class="right_section">
-                Here is a bunch of dummy text with the goal of displaying the css portion of the code well. I am gonna copy this text and use it for all of the dummy section as necessary. So as a result of needing dummy text I am add lyrics from a song.
-                Blinded by the light
-                Revved up like a deuce
-                Another runner in the night
-                Blinded by the light
-                Revved up like a deuce
-                Another runner in the night
-                Blinded by the light
-                Revved up like a deuce
-                Another runner in the night
-                Madman drummers bummers
-                Indians in the summer with a teenage diplomat
-                In the dumps with the mumps
-                As the adolescent pumps his way into his hat
-                With a boulder on my shoulder
-                Feelin' kinda older
-                I tripped the merry-go-round
-                With this very unpleasin'
-                Sneezin' and wheezin
-                The calliope crashed to the ground
-                The calliope crashed to the ground
-                But she was
-                Blinded by the light
-                Revved up like a deuce
-                Another runner in the night
-                Blinded by the light
-                Revved up like a deuce
-                Another runner in the night
+               <div class="messages">
+                    <div class="messages_head">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!---------------Messages Search Bar------------->
+                    <div class="messages_search_bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search Messages" id="message_search">
+                    </div>
+                    <!---------------Messages Category--------------->
+                    <div class="messages_category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message_request">Requests(#ofRequests)</h6>
+                    </div>
+                    <!---------------------Message----------------->
+                    <div class="message">
+                        <div class="profile_pic">
+                            <img src="./images/FriendPic11">
+                        </div>
+                        <div class="message_body">
+                            <h5>NameOfSender</h5>
+                            <p class="text_muted">Content of Message</p> <!-------Seen Messages are muted---->
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile_pic">
+                            <img src="./images/FriendPic12">
+                            <div class="active"></div>                  <!------Active or Online friends have class=active----->
+                        </div>
+                        <div class="message_body">
+                            <h5>NameOfSender</h5>
+                            <p class="text_bold">Content of Message</p>  <!-----New Messages are bold------->
+                        </div>
+                    </div>
+               </div>
+               <!-----------------------End of Message Section------------------>
+
+               <!------------------------Friend Requests------------------------>
+               <div class="friend_requests">
+                    <h4>Friend Requests</h4>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic12">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic13">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic14">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+               </div>
+               <!--------------------End of Friend Requests--------------------->
             </div>
         </div>
     </main>
