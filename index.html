@@ -53,7 +53,7 @@
 
                 <!--------------------Side_Bar------------------------>
                 <div class="side_bar">
-                    <a class="menu_item active">
+                    <a href="javascript:changeWindow('home');" class="menu_item active">
                         <span><i class="uil uil-home"></i></span>
                         <h3>Home</h3>
                     </a>
@@ -69,7 +69,7 @@
                         <span><i class="uil uil-basketball"></i></span>
                         <h3>Favorite Sports</h3>
                     </a>
-                    <a href="javascript:changeWindow('messages');" class="menu_item" id="messages_notifications">
+                    <a data-target="#themodal" data-toggle="modal" class="menu_item" id="messages_notifications" href="#themodal">
                         <span></span><i class="uil uil-envelope-alt"><small class="notification_count">5</small></i></span>
                         <h3>Messages</h3>
                     </a>
@@ -95,13 +95,21 @@
                         <span><i class="uil uil-cog"></i></span>
                         <h3>Settings</h3>
                     </a>
-                    <a href="javascript:changeWindow('signin');" class="menu_item">
+                    <a class="menu_item">
                         <span><i class="uil uil-cog"></i></span>
                         <h3>Sign In</h3>
                     </a>
                 </div>
                 <!---------------------END of Side_bar------------------------->
                 <label for="create_post" class="btn btn_primary">Create Post</label>
+            </div>
+
+            <!-------------Modal for Messages, Notifications and Sign In--->
+            <div id="themodal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text</p>
+                </div>
             </div>
 
             <!-------------CENTER SECTION   (POSTS and NOTIFCATIONS ABOUT LOCATIONS)--->

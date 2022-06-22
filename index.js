@@ -16,14 +16,6 @@ function changeWindow(tab)
     {
         window.location.href = "favoritesports.html";
     }
-    if(tab == 'messages')
-    {
-        window.location.href = "messages.html";
-    }
-    if(tab == 'notifications')
-    {
-        window.location.href = "notifications.html";
-    }
     if(tab == 'upcoming')
     {
         window.location.href = "upcomingevents.html";
@@ -32,8 +24,6 @@ function changeWindow(tab)
     {
         window.location.href = "settings.html";
     }
-    if(tab == 'signin')
-    {
-        window.location.href = "signin.html";
-    }
 }
+
+
