@@ -1,0 +1,106 @@
+/* Import Lato Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap');
+
+/* Create roots */
+:root {
+    /*-----------Roots for Colors-------------*/
+    --color_light: hsl(252, 30%, 95%);
+    --color_medium: hsl(252, 15%, 65%);
+    --color_dark: hsl(252, 30%, 18%);
+    --color_black: hsl(252, 30%, 10%);
+    --color_white: hsl(252, 30%, 100%);
+    --color_primary: hsl(90, 90%, 13%);
+    --color_secondary: hsl(57, 100%, 96%);
+    --color_tertiary: hsl(30, 51%, 30%);
+    --color_confirmed: hsl(125, 85%, 50%);
+    --color_denied: hsl(0, 95%, 65%);
+
+    /*--------------Border & Padding Roots-----------------*/
+    --border_radius: 2rem;
+    --card_border_radius: 1rem;
+    --search_padding: 0.6rem 1rem;
+    --btn_padding: 0.6rem 2rem;
+    --card_padding: 1rem;
+
+    /*--------------Left/Right Top Spacing----------------*/
+    --sticky_top_left: 5.4rem;
+    --sticky_top_right: -18rem;
+
+    /*----------------Font Sizes-------------*/
+    --font_size_btn: 0.9rem;
+    --font_weight_btn: 500;
+}
+
+
+/*---------------------Center Section----------------*/
+.center_section .sports_selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 1rem;
+}
+
+.center_section .sports_selection .sports {
+    padding: var(--card_padding);
+    border-radius: var(--card_border_radius);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color_white);
+    font-size: 2rem;
+    width: 12rem;
+    background: var(--color_white);
+}
+
+.center_section  .sports_selection .sports::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.center_section .sports_selection .sports .basketball {
+    background: orange;
+}
+
+.center_section .sports_selection .sports .soccer {
+    background: hsl(252, 30%, 85%);
+}
+
+.center_section .sports_selection .sports .baseball {
+    background: hsl(5, 50%, 60%);
+}
+
+.center_section .sports_selection .sports .softball {
+    background: hsl(60, 90%, 75%);
+}
+
+.center_section .sports_selection .sports .football {
+    background: var(--color_tertiary);
+}
+
+.center_section .sports_selection .sports .volleyball {
+    background: hsl(221, 59%, 56%);
+}
+
+.center_section .sports_selection .sports .tennis {
+    background: hsl(100, 68%, 56%);
+}
+
+.center_section .sports_selection .sports .pickleball {
+    background: orange;
+}
+
+.center_section .sports_selection .sports .spikeball {
+    background: hsl(60, 90%, 60%);
+}
+
+.center_section .sports_selection .sports .ultimate_frisbee {
+    background: hsl(252, 20%, 93%);
+}
+
+.center_section .sports_selection .sports .lacrosse {
+    background: hsl(225, 97%, 27%);
+}
+
+.center_section .sports_selection .sports .lawn_sports {
+    background: orange;
+}
