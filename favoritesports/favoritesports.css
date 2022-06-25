@@ -30,3 +30,77 @@
     --font_size_btn: 0.9rem;
     --font_weight_btn: 500;
 }
+
+
+/*---------------------Center Section----------------*/
+.center_section .sports_selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 1rem;
+}
+
+.center_section .sports_selection .sports {
+    padding: var(--card_padding);
+    border-radius: var(--card_border_radius);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color_white);
+    font-size: 2rem;
+    width: 12rem;
+    background: var(--color_white);
+}
+
+.center_section  .sports_selection .sports::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.center_section .sports_selection .sports .basketball {
+    background: orange;
+}
+
+.center_section .sports_selection .sports .soccer {
+    background: hsl(252, 30%, 85%);
+}
+
+.center_section .sports_selection .sports .baseball {
+    background: hsl(5, 50%, 60%);
+}
+
+.center_section .sports_selection .sports .softball {
+    background: hsl(60, 90%, 75%);
+}
+
+.center_section .sports_selection .sports .football {
+    background: var(--color_tertiary);
+}
+
+.center_section .sports_selection .sports .volleyball {
+    background: hsl(221, 59%, 56%);
+}
+
+.center_section .sports_selection .sports .tennis {
+    background: hsl(100, 68%, 56%);
+}
+
+.center_section .sports_selection .sports .pickleball {
+    background: orange;
+}
+
+.center_section .sports_selection .sports .spikeball {
+    background: hsl(60, 90%, 60%);
+}
+
+.center_section .sports_selection .sports .ultimate_frisbee {
+    background: hsl(252, 20%, 93%);
+}
+
+.center_section .sports_selection .sports .lacrosse {
+    background: hsl(225, 97%, 27%);
+}
+
+.center_section .sports_selection .sports .lawn_sports {
+    background: orange;
+}
