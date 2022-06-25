@@ -130,7 +130,7 @@ img.small {
 nav {
     width: 100%;
     background: var(--color_white);
-    padding: 0.3rem 0;
+    padding: 1.75rem 0;
     position: fixed;
     top: 0;
     z-index: 10;
