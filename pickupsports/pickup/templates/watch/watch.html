@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick-Up Sports Social Media Website (HTML,CSS,JS)</title>
+    <!----CSS and ICONSCOUT CDN LINKS---->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./watch.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-------Link for IconScout Browsing https://iconscout.com/unicons/explore/line ----->
+    <!----JS External Script Link---->
+    <script src="./watch.js"></script>
+</head>
+<body>
+    <!----------------Navigation Bar & Search Bar------------------------->
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                Pick-Up Sports 
+            </h2> 
+            <div class="search_bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for Players, Locations, and Sports">
+            </div>
+            <div class="create">
+                <label class="btn btn_primary" for="create_post">Create Post</label>
+            </div>
+            <div class="profile_pic">
+                <img src="./images/ProfilePicture_Default.jpg">
+            </div>
+        </div>
+    </nav>
+
+
+    <!---------------------MAIN SECTION------------------------------->
+    <main>
+        <div class="container">
+            <!------------LEFT SECTION   (MENU and Functions List)---------->
+            <div class="left_section">
+                <!-------Profile Picture, Name, and Handle------->
+                <a class="profile">
+                    <div class="profile_pic">
+                            <img src="./images/ProfilePicture_Default.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Name_of_User</h4>
+                        <div class="text_muted">
+                            @UsernameHandle
+                        </div>
+                    </div>
+                </a>
+
+                <!--------------------Side_Bar------------------------>
+                <div class="side_bar">
+                    <a href="javascript:changeWindow('home');" class="menu_item">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="javascript:changeWindow('locations');" class="menu_item">
+                        <span><i class="uil uil-map-marker"></i></span>
+                        <h3>Locations</h3>
+                    </a>
+                    <a href="javascript:changeWindow('watch');" class="menu_item active">
+                        <span><i class="uil uil-tv-retro"></i></span>
+                        <h3>Watch</h3>
+                    </a>
+                    <a href="javascript:changeWindow('favoritesports');" class="menu_item">
+                        <span><i class="uil uil-basketball"></i></span>
+                        <h3>Favorite Sports</h3>
+                    </a>
+                    <a data-target="#themodal" data-toggle="modal" class="menu_item" id="messages_notifications" href="#themodal">
+                        <span></span><i class="uil uil-envelope-alt"><small class="notification_count">5</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu_item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification_count">8</small></i></span>
+                        <h3>Notifications</h3>
+                        <!-------Notification Popup------->
+                        <div class="notification_popup">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic1">
+                            </div>
+                            <div class="notification_text">
+                                <b>Friend1Name</b> notification message - add multiple classes for each type of notification.
+                                <small class="text_muted">TimeSinceNotification</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:changeWindow('upcoming');" class="menu_item">
+                        <span><i class="uil uil-calender"></i></span>
+                        <h3>Upcoming Events</h3>
+                    </a>
+                    <a href="javascript:changeWindow('settings');" class="menu_item">
+                        <span><i class="uil uil-cog"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                    <a class="menu_item">
+                        <span><i class="uil uil-cog"></i></span>
+                        <h3>Sign In</h3>
+                    </a>
+                </div>
+                <!---------------------END of Side_bar------------------------->
+                <label for="create_post" class="btn btn_primary">Create Post</label>
+            </div>
+
+            <!-------------Modal for Messages, Notifications and Sign In--->
+            <div id="themodal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text</p>
+                </div>
+            </div>
+
+            <!-------------CENTER SECTION   (POSTS and NOTIFCATIONS ABOUT LOCATIONS)--->
+            
+
+            <!-----------RIGHT SECTION     (INTERACTIONS with FRIENDS and UPCOMING EVENTS)-->
+            <div class="right_section">
+               <div class="messages">
+                    <div class="messages_head">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!---------------Messages Search Bar------------->
+                    <div class="messages_search_bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search Messages" id="message_search">
+                    </div>
+                    <!---------------Messages Category--------------->
+                    <div class="messages_category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message_request">Requests(#ofRequests)</h6>
+                    </div>
+                    <!---------------------Message----------------->
+                    <div class="message">
+                        <div class="profile_pic">
+                            <img src="./images/FriendPic11">
+                        </div>
+                        <div class="message_body">
+                            <h5>NameOfSender</h5>
+                            <p class="text_muted">Content of Message</p> <!-------Seen Messages are muted---->
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile_pic">
+                            <img src="./images/FriendPic12">
+                            <div class="active"></div>                  <!------Active or Online friends have class=active----->
+                        </div>
+                        <div class="message_body">
+                            <h5>NameOfSender</h5>
+                            <p class="text_bold">Content of Message</p>  <!-----New Messages are bold------->
+                        </div>
+                    </div>
+               </div>
+               <!-----------------------End of Message Section------------------>
+
+               <!------------------------Friend Requests------------------------>
+               <div class="friend_requests">
+                    <h4>Friend Requests</h4>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic12">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic13">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="request_info">
+                            <div class="profile_pic">
+                                <img src="./images/FriendPic14">
+                            </div>
+                            <div>
+                                <h5>NameOfSender</h5>
+                                <p class="text_muted">
+                                    (# of mutual friends)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn_primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+               </div>
+               <!--------------------End of Friend Requests--------------------->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
